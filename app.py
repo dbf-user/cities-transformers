@@ -3,7 +3,9 @@ import openai
 from dotenv import load_dotenv
 import os 
 
-openai.api_key = os.getenv('api_key')
+OPENAI_API_KEY = 'api_key'
+openai.api_key = os.getenv(OPENAI_API_KEY)
+
 
 st.set_page_config(layout="wide", page_icon="🏢", page_title="Cities Transfomer")
 st.title("🏢 GPT-3 for 15' City Design")
