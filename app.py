@@ -13,6 +13,8 @@ def configure():
 
 left, right = st.columns(2)
 
+configure()
+
 right.subheader("Generated Solutions 🎉")
 
 ## right.image("template.png", width=300)
