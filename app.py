@@ -2,9 +2,11 @@ import streamlit as st
 import openai
 from dotenv import load_dotenv
 import os 
+import creds
 
-OPENAI_API_KEY = 'api_key'
-openai.api_key = os.getenv(OPENAI_API_KEY)
+key = creds.api_key
+
+openai.api_key = os.getenv(key)
 
 
 st.set_page_config(layout="wide", page_icon="🏢", page_title="Cities Transfomer")
