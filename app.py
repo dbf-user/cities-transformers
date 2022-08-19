@@ -1,13 +1,15 @@
 import streamlit as st
 import openai
+from dotenv import load_dotenv
+import os 
 
-OPEN_API_KEY=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
-
-openai.api_key = os.getenv("OPEN_API_KEY")
+openai.api_key = os.getenv('api_key')
 
 st.set_page_config(layout="wide", page_icon="🏢", page_title="Cities Transfomer")
 st.title("🏢 GPT-3 for 15' City Design")
 
+def configure():
+    load_dotenv()
 
 left, right = st.columns(2)
 
