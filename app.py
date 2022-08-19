@@ -11,8 +11,6 @@ st.title("🏢 GPT-3 for 15' City Design")
 def configure():
     load_dotenv()
 
-configure()
-
 left, right = st.columns(2)
 
 right.subheader("Generated Solutions 🎉")
